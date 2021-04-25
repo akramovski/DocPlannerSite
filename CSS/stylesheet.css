@@ -1,0 +1,164 @@
+body {
+	width: 1200px;
+	margin: auto;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+nav {
+	width: 100%;
+	height: 80px;
+	background: transparent;
+
+	margin-top: 10px;
+}
+.header-logo {
+	width: 368px;
+	height: 33px;
+	margin-top: 8px;
+}
+
+nav ul {
+	float: right;
+	margin-top: 20px;
+}
+
+nav ul li {
+	float: right;
+	list-style: none;
+	position: relative;
+}
+nav ul li a {
+	color: #ababab;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 22px 14px;
+}
+
+nav ul li ul {
+	display: none;
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+	border-radius: 5px;
+	padding: 12px;
+	box-shadow: rgba(170, 170, 170, 0.246) -2px 2px 6px 4px;
+}
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li ul li a {
+	line-height: 50px;
+	padding: 12px 14px;
+}
+
+nav ul li ul li a:hover {
+	color: #00ccb1;
+	background-color: rgba(160, 155, 155, 0.096);
+}
+
+nav ul li ul li {
+	width: 180px;
+}
+nav ul li a:hover,
+.active-button {
+	color: #00ccb1;
+}
+.introduction-title {
+	color: #00b39b;
+	font-size: 2.125rem;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	margin-top: 80px;
+}
+
+.introduction {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0px;
+}
+.introduction-text {
+	margin: 10px;
+}
+
+.introduction-text {
+	display: flex;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.services {
+	display: flex;
+	color: white;
+	flex-basis: 33%;
+}
+.service-card-patients {
+	background-color: #00ccb1;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 10px;
+	height: 300px;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.service-card-doctors {
+	background-color: #3d83df;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 10px;
+	height: 300px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.service-card-clinics {
+	background-color: #1b2734;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 10px;
+	height: 300px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.service-for {
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	padding-top: 35px;
+}
+
+.service-card-select {
+	color: white;
+	background: transparent;
+	text-decoration: underline;
+	border: none;
+	font-size: 18px;
+}
+
+.service-card-clinics:hover {
+	background-color: #1b2734de;
+}
+
+.country {
+	color: black;
+}
+.sub-menu {
+	display: block;
+}
+.service-card-doctors:hover {
+	background-color: #74a4e2de;
+}
+.service-card-patients:hover {
+	background-color: #00ccb1de;
+}
