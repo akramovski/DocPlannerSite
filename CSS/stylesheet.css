@@ -1,5 +1,5 @@
 body {
-	width: 1200px;
+	width: 1200px; /*it's better to not force a width in px on the body*/
 	margin: auto;
 	overflow: visible;
 	padding-top: 80px;
@@ -17,7 +17,8 @@ body {
 	position: fixed;
 
 	top: 0px;
-	width: 63%;
+	width: 100%;
+	z-index: 1;
 }
 .header-logo {
 	width: 368px;
@@ -27,7 +28,7 @@ body {
 
 nav ul {
 	float: right;
-	margin-top: 20px;
+	margin: 20px 80px;
 }
 
 nav ul li {
@@ -46,6 +47,8 @@ nav ul li a {
 nav ul li ul {
 	display: none;
 	position: absolute;
+	top: 5px;
+	left: -200px;
 	background-color: rgb(255, 255, 255);
 	border-radius: 5px;
 	padding: 12px;
@@ -71,6 +74,10 @@ nav ul li ul li {
 nav ul li a:hover,
 .active-button {
 	color: #00ccb1;
+}
+
+main {
+	z-index: 0;
 }
 .introduction-title {
 	color: #00b39b;
